@@ -1,0 +1,161 @@
+/* Main body */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 100%;
+}
+
+.footer{
+    background-color: #282525;
+    padding: 60px 0;
+}
+
+
+
+.bordered{
+    border:0;
+}
+
+.aa{
+    color: #ffffff;
+}
+
+.aab{
+    color: #3661ab;
+}
+.aac{
+    color: #ab4471;
+}
+.aad{
+    color: #c84141;
+}
+.aae{
+    color: #2c58a5;
+}
+/* Upper row */
+.upperrow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+h1{
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+.footer-col{
+    color: #FFFFFF;
+    font-size: 25px;
+    width: 310px;
+    height: 319px;
+}
+
+.footer-col a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.location{
+    padding-bottom: 10px;
+}
+
+.mail{
+    padding-bottom: 10px;
+}
+
+.box{
+    padding-bottom: 50px;
+}
+
+.container span{
+    padding-right: 20px;
+}
+
+.loc{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.loc-text{
+    width: 260px;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 22px;
+}
+
+.name{
+    padding-right: 20px;
+}
+
+.email{
+    padding-left: 19.5px;
+}
+
+input[type=text]{
+    color: #282525;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    color: #282525;
+    padding: 10px;
+    padding-left: 134.8px;
+    padding-right: 134.8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    padding: 15px;
+    padding-left: 134.8px;
+    padding-right: 134.8px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Lower row */
+.social{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.fa-brands{
+    font-size: 40px;
+}
+
+.logo{
+    padding: 10px;
+}
