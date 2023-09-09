@@ -1,0 +1,443 @@
+body {
+    overflow-x: hidden; 
+}
+
+.main{
+    height: 670px;
+    width: 100vw;
+    background-color: #FDF9F6;
+    display: flex;
+    justify-content: center;
+}
+
+.main2{
+    height: 670px;
+    width: 65vw;
+    /* background-color: rgb(158, 216, 110); */
+    padding: 40px;
+}
+
+.main3{
+    height: 670px;
+    width: 35vw;
+    /* background-color: rgb(94, 129, 200); */
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.textHeadings{
+    font-size: 31px;
+    padding: 0;
+}
+
+.eventH{
+    padding-top: 85px;
+    padding-left: 38px;
+}
+.hrTag{
+    width: 88px;
+    height: 2px;
+    background-color: rgb(201, 181, 0);
+    margin-left: 42px;
+}
+
+.text{
+    font-size: 20px;
+}
+.firtPara{
+    padding-top: 25px;
+    margin-left: 42px;
+}
+.upImage{
+    margin-left: 90px;
+    padding-top: 35px;
+    width: 333px;
+    height: 201px;
+    border-radius: 36px;
+}
+
+.mainImg{
+    height: 450px;
+    width: 450px;
+    border-radius: 30px;
+}
+
+.EventPart{
+    width: 100vw;
+    height: auto;
+    padding: 55px;
+    background-color: #FDF9F6;
+}   
+
+.allEventH{
+    margin-top: 20px;
+    padding-left: 40px;
+}
+.allEventHr{
+    margin-left: 40px;
+}
+
+.container{
+    margin-top: 90px;
+    height: 300px;
+    width: 92vw;
+    display: flex;
+    padding: 0px;
+}
+/* .imageContainer{
+    height: 280px;
+    width: 400px;
+    background-color: yellow;
+    border-radius: 30px;
+    
+} */
+.textContainer{
+    height: auto;
+    width: 1100px;
+    background-color: rgb(211, 211, 178);
+    margin-left:50px ;
+    border-radius: 30px;
+}
+
+.imageContainer img{
+    height: 280px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.houseH{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.houseHr{
+    margin-left: 60px;
+}
+.housePara{
+    margin-top: 25px;
+    margin-left: 60px;
+}
+.imageContainer1{
+    margin-left:50px ;
+}
+.textContainer1{
+    height: auto;
+    width: 1100px;
+    background-color: rgb(211, 211, 178);
+    border-radius: 30px;
+}
+
+
+@media (max-width : 1387px){
+    .main3 {
+        height: 670px;
+        width: 40vw;
+        /* background-color: rgb(94, 129, 200); */
+        padding: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+}
+@media (max-width : 1275px){
+    .main{
+        height: 680px;
+        width: 100vw;
+        background-color: #FDF9F6;
+        display: flex;
+        justify-content: center;
+    }
+    .main3 {
+        height: 670px;
+        width: 45vw;
+        /* background-color: rgb(94, 129, 200); */
+        padding: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+}
+@media (max-width : 1199px){
+    .main{
+        height: 720px;
+        width: 100vw;
+        background-color: #FDF9F6;
+        display: flex;
+        justify-content: center;
+    }
+    .main3 {
+        height: 670px;
+        width: 50vw;
+        /* background-color: rgb(94, 129, 200); */
+        padding: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .mainImg{
+        height: 400px;
+        width: 400px;
+        border-radius: 30px;
+    }
+    .textContainer{
+        height: auto;
+        width: 1100px;
+        background-color: rgb(211, 211, 178);
+        margin-left:50px ;
+        border-radius: 30px;
+    }
+    
+    .imageContainer img{
+        height: 300px;
+        width: 300px;
+        border-radius: 30px;
+    }
+    .container{
+        margin-top: 90px;
+        height: auto;
+        width: 92vw;
+        display: flex;
+        padding: 0px;
+    }
+}
+
+@media (max-width : 990px){
+    .main{
+        padding: 17px;
+    }
+    .main2{
+        height: auto;
+        width: 100vw;
+    }
+    .main3 {
+        display: none;
+    }
+    .container{
+        margin-top: 90px;
+        height: auto;
+        width: 92vw;
+        
+    }
+}
+
+@media (max-width : 800px){
+    .container{
+        margin-top: 90px;
+        height: auto;
+        width: 94vw;
+    }
+    .textContainer{
+        height: auto;
+        width: 1100px;
+        background-color: rgb(211, 211, 178);
+        margin-left:2rem  ;
+        margin-right: 3rem;
+        border-radius: 30px;
+    }
+    .imageContainer1{
+        margin-left:2rem  ;
+        margin-right: 3rem;
+    }
+    .imageContainer img{
+        height: 240px;
+        width: 300px;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width : 775px){
+    .container{
+        margin-top: 90px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+    }
+    .textContainer{
+        height: auto;
+        width: 600px;
+        background-color: rgb(211, 211, 178);
+        margin-left:2rem  ;
+        margin-right: 3rem;
+        border-radius: 30px;
+    }
+    .textContainer1{
+        height: auto;
+        width: 600px;
+        background-color: rgb(211, 211, 178);
+        border-radius: 30px;
+    }
+    .imageContainer{
+        margin-bottom: 15px;
+    }
+    .imageContainer{
+        margin-top: 15px;
+    }
+    .imageContainer img{
+        height: 240px;
+        width: 400px;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width : 637px){
+    .main{
+        height: 750px;
+    }
+    
+    .textContainer{
+        height: auto;
+        width: 500px;
+        background-color: rgb(211, 211, 178);
+        margin-left:2rem  ;
+        margin-right: 3rem;
+        border-radius: 30px;
+    }
+    .textContainer1{
+        height: auto;
+        width: 500px;
+        background-color: rgb(211, 211, 178);
+        border-radius: 30px;
+    }
+}
+
+@media (max-width : 520px){
+    .main{
+        height: 570px;
+        padding: 0;
+    }
+    .main2{
+        height: 500px;
+        width: auto;
+        padding-top: 30px;
+        padding: 20px;
+        /* background-color: green; */
+    }
+    .eventH{
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+    .hrTag{
+        margin-left: 5px;
+    }
+    .text{
+        font-size: 17px;
+    }
+    .firtPara{
+        padding-top: 25px;
+        margin-left: 4px;
+    }
+
+    .upImage{
+        margin-left: 67px;
+        padding-top: 40px;
+        width: 281px;
+        height: 187px;
+        border-radius: 36px;
+    }
+    .EventPart{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: #FDF9F6;
+    }
+    .allEventH{
+        margin-top: 0px;
+        padding-left: 40px;
+    }
+    .allEventHr{
+        margin-left: 40px;
+    }
+    .EventPart{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        background-color: #FDF9F6;
+    }
+    .allEventH{
+        margin-top: 0px;
+        padding-left: 20px;
+    }
+    .allEventHr{
+        margin-left: 20px;
+    }
+    .container{
+        margin-top: 50px;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .imageContainer img{
+        height: 280px;
+        width: 400px;
+        border-radius: 30px;
+    }
+    .imageContainer img{
+        height: 280px;
+        width: 280px;
+        border-radius: 30px;
+    }
+    .textContainer{
+        height: auto;
+        width: auto;
+        background-color: rgb(211, 211, 178);
+        border-radius: 30px;
+    }
+    .houseH{
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+    .houseHr{
+        margin-left: 60px;
+    }
+    .imageContainer1{
+        margin-left:0px ;
+    }
+    .textContainer1{
+        height: auto;
+        width: auto;
+        margin-left: 19px;
+        margin-right: 24px;
+        background-color: rgb(211, 211, 178);
+        border-radius: 30px;
+    }
+}   
+@media (max-width : 415px){
+    .main{
+        height: 630px;
+        padding-left: 0px;
+    }
+
+    .main2{
+        height: 500px;
+        width: 300px;
+        padding-top: 30px;
+        padding: 0;
+        /* background-color: green; */
+    }
+    .eventH{
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+    .hrTag{
+        margin-left: 5px;
+    }
+    .firtPara{
+        padding-top: 25px;
+        margin-left: 4px;
+    }
+    .upImage{
+        margin-left: 20px;
+        padding-top: 40px;
+        width: 250px;
+        height: 180px;
+        border-radius: 36px;
+    }
+    
+
+}

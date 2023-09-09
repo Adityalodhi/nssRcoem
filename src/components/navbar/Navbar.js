@@ -2,6 +2,7 @@ import React,{useState}  from 'react';
 import "./NavbarComp.css";
 import logo1 from "./images/nssLogo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -24,9 +25,9 @@ export default function Navbar() {
         <nav className={fix ? "main-nav navvv" : "main-nav"}>
             {/* logo part */}
             <div className='logo'>
-                <a href="/">
+                <Link to="/">
                     <img className='img1' src={logo1} alt="" />
-                </a>
+                </Link>
                 
             </div>
             <div className='logo-text'>
@@ -44,19 +45,19 @@ export default function Navbar() {
             <div className={showMediaIcons ? "mobile-menu-link" : "menu-link"}>
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <a href="/">Initiatives</a>
+                        <Link to="/initiative">Initiatives</Link>
                     </li>
                     <li>
-                        <a href="/">Events</a>
+                        <Link to="/event">Events</Link>
                     </li>
                     <li>
-                        <a href="/">Team</a>
+                        <Link to="/team">Team</Link>
                     </li>
                     <li>
-                        <a href="/">Gallary</a>
+                        <Link to="/gallary">Gallary</Link>
                     </li>
                 </ul>
             </div>
