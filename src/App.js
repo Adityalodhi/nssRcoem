@@ -2,6 +2,7 @@
 import './App.css';
 import Event from './components/Events/Event';
 import Home from './components/HomePage/Home';
+import Inititative from './components/Initiatives/Inititative';
 // import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 
@@ -18,8 +19,8 @@ function App(){
     <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/initiative" element={<Inititative />} />
         <Route path="/event" element={<Event />} />
-
       </Routes>    
     
     </BrowserRouter>

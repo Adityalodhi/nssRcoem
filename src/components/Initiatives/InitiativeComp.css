@@ -1,0 +1,107 @@
+body {
+    overflow-x: hidden; 
+}
+
+.ini{
+    background-color: #FDF9F6;
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.ini2{
+    /* background-color: aliceblue; */
+    width: 65%;
+    height: auto;
+}
+.ini3{
+    /* background-color: rgb(64, 130, 188); */
+    width: 35%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.heading{
+    font-size: 31px;
+    margin-left: 7% ;
+    margin-top: 15%;
+}
+.hrtag{
+    width: 80px;
+    height: 2px;
+    background-color: rgb(201, 181, 0);
+    margin-left: 7.5% ;
+}
+.para{
+    margin-left: 7.5% ;
+    font-size: 20px ;
+    margin-top: 28px;
+}
+
+.mainImg{
+    height: 75%;
+    width: 82%;
+    border-radius: 30px;
+}
+
+.IniPages{
+    height: auto;
+    width: 100%;
+    background-color: #FDF9F6;
+    padding: 30px;
+}
+
+@media (max-width : 1387px){
+    .mainImg{
+        height: 55%;
+        width: 85%;
+        border-radius: 30px;
+    }
+}
+@media (max-width : 780px){
+    .ini{
+        display: flex;
+        flex-direction: column;
+    }
+    .ini2{
+        /* background-color: aliceblue; */
+        width: 100%;
+        height: auto;
+    }
+    .ini3{
+        /* background-color: rgb(64, 130, 188); */
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .mainImg{
+        height: 100%;
+        width: 50%;
+        border-radius: 30px;
+    }
+    .iniImgComp img{
+        margin-left: 70px;
+    }
+}
+
+@media (max-width : 780px){
+    .mainImg{
+        height: 250px;
+        width: 300px;
+        border-radius: 30px;
+    }
+}
+@media (max-width : 530px){
+    .ini{
+        height: 700px;
+    }
+}
+
+@media (max-width : 450px){
+    .ini{
+        height: 760px;
+    }
+}
