@@ -8,6 +8,7 @@ body {
     background-color: #FDF9F6;
     display: flex;
     justify-content: center;
+    padding-top: 9rem;
 }
 
 .main2{
@@ -40,11 +41,15 @@ body {
     width: 88px;
     height: 2px;
     background-color: rgb(201, 181, 0);
+}
+
+.headings{
     margin-left: 42px;
 }
 
+
 .text{
-    font-size: 20px;
+    font-size: 19px;
 }
 .firtPara{
     padding-top: 25px;
@@ -62,6 +67,7 @@ body {
     height: 450px;
     width: 450px;
     border-radius: 30px;
+    box-shadow: 5px 5px 3rem;
 }
 
 .EventPart{
@@ -69,6 +75,7 @@ body {
     height: auto;
     padding: 55px;
     background-color: #FDF9F6;
+    padding-top: 200px;
 }   
 
 .allEventH{
@@ -79,7 +86,7 @@ body {
     margin-left: 40px;
 }
 
-.container{
+.container11{
     margin-top: 90px;
     height: 300px;
     width: 92vw;
@@ -105,21 +112,25 @@ body {
     height: 280px;
     width: 400px;
     border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .houseH{
     margin-top: 20px;
     margin-left: 60px;
 }
-.houseHr{
+.houseHr11{
     margin-left: 60px;
 }
 .housePara{
     margin-top: 25px;
     margin-left: 60px;
+    margin-right: 40px;
 }
 .imageContainer1{
     margin-left:50px ;
+    
 }
 .textContainer1{
     height: auto;
@@ -192,8 +203,10 @@ body {
         height: 300px;
         width: 300px;
         border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
-    .container{
+    .container11{
         margin-top: 90px;
         height: auto;
         width: 92vw;
@@ -213,7 +226,7 @@ body {
     .main3 {
         display: none;
     }
-    .container{
+    .container11{
         margin-top: 90px;
         height: auto;
         width: 92vw;
@@ -222,7 +235,7 @@ body {
 }
 
 @media (max-width : 800px){
-    .container{
+    .container11{
         margin-top: 90px;
         height: auto;
         width: 94vw;
@@ -243,11 +256,13 @@ body {
         height: 240px;
         width: 300px;
         border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
 }
 
 @media (max-width : 775px){
-    .container{
+    .container11{
         margin-top: 90px;
         height: auto;
         width: 100%;
@@ -280,6 +295,8 @@ body {
         height: 240px;
         width: 400px;
         border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
 }
 
@@ -308,6 +325,7 @@ body {
     .main{
         height: 570px;
         padding: 0;
+        padding-top: 8rem;
     }
     .main2{
         height: 500px;
@@ -343,10 +361,12 @@ body {
         height: auto;
         padding: 10px;
         background-color: #FDF9F6;
+        padding-top: 100px;
     }
     .allEventH{
         margin-top: 0px;
         padding-left: 40px;
+        padding-top: 180px;
     }
     .allEventHr{
         margin-left: 40px;
@@ -364,7 +384,7 @@ body {
     .allEventHr{
         margin-left: 20px;
     }
-    .container{
+    .container11{
         margin-top: 50px;
         height: auto;
         width: auto;
@@ -376,23 +396,33 @@ body {
         height: 280px;
         width: 400px;
         border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
     .imageContainer img{
         height: 280px;
         width: 280px;
         border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
     .textContainer{
         height: auto;
         width: auto;
         background-color: rgb(211, 211, 178);
         border-radius: 30px;
+        
     }
+
+    /* div .textContainer{
+        box-shadow: 5px 5px 3em;
+    } */
+
     .houseH{
         margin-top: 20px;
         margin-left: 60px;
     }
-    .houseHr{
+    .houseHr11{
         margin-left: 60px;
     }
     .imageContainer1{
@@ -405,6 +435,8 @@ body {
         margin-right: 24px;
         background-color: rgb(211, 211, 178);
         border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
 }   
 @media (max-width : 415px){
@@ -423,6 +455,10 @@ body {
     .eventH{
         padding-top: 20px;
         padding-left: 0px;
+        
+    }
+    .allEventH{
+        padding-top: 230px;
     }
     .hrTag{
         margin-left: 5px;
@@ -433,7 +469,7 @@ body {
     }
     .upImage{
         margin-left: 20px;
-        padding-top: 40px;
+        padding-top: 40px;  
         width: 250px;
         height: 180px;
         border-radius: 36px;

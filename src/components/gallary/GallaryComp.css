@@ -1,0 +1,142 @@
+/* .slider{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+} */
+
+.coo{
+  /* background-color: red; */
+}
+
+.mainClass{
+  padding: 10px;
+  padding-top: 11rem;
+}
+
+.adi111{
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-bottom: 0px;
+  font-size: 30px;
+  color: black;
+}
+
+.fac1{
+  margin-left: 50px;
+  width: 70px;
+  height: 2px;    
+  background-color: rgb(201, 181, 0);
+}
+.slider{
+  height: 100%;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  border: 2px solid balck;
+  /* padding-left: 0rem; */
+}
+.slide-track{
+  padding-top: 45px;
+  display: flex;
+  width: calc(1000px * 10);
+  animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover{
+  animation-play-state: paused;
+}
+
+.mmm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  box-shadow: 5px 5px 3em;
+  /* padding-right: 80px; */
+  /* margin-right: 60px; */
+  /* padding: 20px; */
+}
+
+.mmm a{
+  /* align-items: center; */
+  /* padding: 20px; */
+  margin-left: 50px;
+  color: black;
+  /* box-shadow: 20px 20px 2em; */
+}
+
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px*9));
+  }
+}
+
+.slide{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  border-radius: 10px;
+}
+
+img:hover{
+  transform: translateZ(20px);
+  
+}
+
+.slide::before,.slide::after{
+  background: linear-gradient(to right,rgba(0,255,255) 0%,rgba(255,255,255) 100%);
+  content: '';
+  height: 100%;
+  /* position: absolute; */
+  width: 15%;
+  z-index: 2;
+}
+
+.slider::before{
+  left: 0;
+  top: 0;
+}
+
+.slide::after{
+  right: 0;
+  top: 0;
+  transform: rotateZ(100deg);
+}
+
+.Exmore{
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.mmm:hover{
+  background-color:rgb(206, 217, 237);
+}
+
+.Exmore a{
+  padding: 8px;
+  margin-right: 50px;
+}
+
+.Exmore a:hover{
+  /* color: rgb(255, 255, 255); */
+  text-decoration: underline;
+  font-size: bolder;
+}

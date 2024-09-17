@@ -2,27 +2,38 @@
 import './App.css';
 import Event from './components/Events/Event';
 import Home from './components/HomePage/Home';
+// import Images from './components/ImagesPart/Images';
 import Inititative from './components/Initiatives/Inititative';
-// import Footer from './components/footer/Footer';
+import Gallary from './components/gallary/Gallary';
+import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
+import Team from './components/team/Team';
+
 
 import {
   Routes,
   Route,
   BrowserRouter
 } from "react-router-dom";
+import Team22 from './components/team22/Team22';
+import Prerna15 from './components/ImagesPart/prerna15';
 
 
-function App(){
-  return(
+function App() {
+  return (
     <BrowserRouter>
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/initiative" element={<Inititative />} />
         <Route path="/event" element={<Event />} />
-      </Routes>    
-    
+        <Route path="/team" element={<Team />} />
+        <Route path="/team22" element={<Team22 />} />
+        <Route path="/gallary" element={<Gallary />} />
+        <Route path="/prerna15" element={<Prerna15 />} />
+        
+      </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -1,27 +1,67 @@
 import React from 'react'
 import "./FooterComp.css";
+import instaa from "./FooterImages/insta.webp";
+import youtube from "./FooterImages/youtube.png";
+import whatsapp from "./FooterImages/whatsapp.png";
+import facebook from "./FooterImages/facebook.webp";
+// import ReactPlayer from 'react-player';
+
+import { BiLogoInstagramAlt } from 'react-icons/bi';
+import { BsYoutube } from 'react-icons/bs';
+import { RiWhatsappFill } from 'react-icons/ri';
+import { BiLogoFacebookCircle } from 'react-icons/bi';
 
 export default function Footer() {
     return (
         <>
-            <footer className="footer">
+            <footer className='mainfoot'>
+                <div className="ff">
+                    <div className="nn">
+                        <div className="aaa">
+                            <div className="aaa1">
+                                <h3>Contact Us.</h3>
+                                <p>Shri Ramdeobaba College of Engineering and Management, Katol Rd, Lonand, Gittikhadan, Nagpur, Maharashtra - 440013</p>
+                            </div>
+                            <div className="aaa2">
+                                <p>nssrcoem@rknec.edu</p>
+                                <p>+91-XXXXXXXXXX</p>
+                            </div>
+                        </div>
+                        <div className='logoss'>
+                            <a href="https://instagram.com/nss_rcoem?igshid=MzRlODBiNWFlZA=="  target='_blank' className='insta ii'><img src={instaa} alt="" /></a>
+                            <a href="https://youtube.com/@nssrcoem1180?si=Dlez4A-bE_HZYoqU"  target='_blank' className='insta'><img src={youtube} alt="" /></a>
+                            <a href=""  target='_blank' className='insta'><img src={whatsapp} alt="" /></a>
+                            <a href=""  target='_blank' className='insta'><img src={facebook} alt="" /></a>
+                            {/* <a href="https://instagram.com/nss_rcoem?igshid=MzRlODBiNWFlZA==" target='_blank' className='insta'><BiLogoInstagramAlt /></a> */}
+                            {/* <a href="https://youtube.com/@nssrcoem1180?si=Dlez4A-bE_HZYoqU" target='_blank'><BsYoutube /></a>
+                            <a href="" target='_blank'><RiWhatsappFill /></a>
+                            <a href="" target='_blank'><BiLogoFacebookCircle /></a> */}
+                        </div>
+                    </div>
+                    <div className="nn1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.3908650294857!2d79.05904737500413!3d21.17662638268401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1a8970c08e9%3A0xfe4a9c97e7e671cb!2sShri%20Ramdeobaba%20College%20of%20Engineering%20and%20Management!5e0!3m2!1sen!2sin!4v1694786839677!5m2!1sen!2sin" width="310" height="319" loading="lazy" ></iframe>
+                    </div>
+                </div>
+                <div className='xxxx'>
+                    <div className="linee"></div>
+                    <p>copy rights</p>
+                </div>
+            </footer>
+            {/* <footer className="ft">
 
-                <div className="container">
+                <div className="con">
 
-                    <div className="row">
+                    <div className="rws">
 
-                        <div className="upperrow">
+                        <div className="uw">
 
-                            <div className="box">
+                            <div className="bx">
 
-                                <div className="footer-col">
+                                <div className="ft-col">
 
-                                    <div className="map">
+                                    <div className="mp">
 
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.3909908612036!2d79.05904737510942!3d21.17662138050995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1a8970c08e9%3A0xfe4a9c97e7e671cb!2sShri%20Ramdeobaba%20College%20of%20Engineering%20and%20Management!5e0!3m2!1sen!2sin!4v1693572204554!5m2!1sen!2sin"
-                                            width="310" height="319" className="bordered" allowfullscreen="" loading="lazy"
-                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.3908650294857!2d79.05904737500413!3d21.17662638268401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1a8970c08e9%3A0xfe4a9c97e7e671cb!2sShri%20Ramdeobaba%20College%20of%20Engineering%20and%20Management!5e0!3m2!1sen!2sin!4v1694786839677!5m2!1sen!2sin" width="310" height="319"  loading="lazy" ></iframe>
 
                                     </div>
 
@@ -29,22 +69,22 @@ export default function Footer() {
 
                             </div>
 
-                            <div className="box">
+                            <div className="bx">
 
-                                <div className="footer-col">
+                                <div className="ft-col">
 
                                     <h1>Contact Us</h1>
 
-                                    <div className="location">
+                                    <div className="lt">
 
                                         <a href="https://goo.gl/maps/WFizVKCzB67Ps8y79">
                                             <div className="loc">
 
                                                 <div className="loc-logo aa">
-                                                    <span><i className="fa-solid fa-location-dot" ></i></span>
+                                                    <span><i icon="fa-solid fa-location-dot" style={{ color: "#ffffff", }}></i></span>
                                                 </div>
 
-                                                <div className="loc-text">
+                                                <div className="loc-txt">
                                                     Shri Ramdeobaba College of Engineering and Management, Katol Rd, Lonand,
                                                     Gittikhadan,
                                                     Nagpur,
@@ -57,16 +97,16 @@ export default function Footer() {
 
                                     </div>
 
-                                    <div className="mail aa" >
+                                    <div className="ml aa" >
 
-                                        <a href=""><span><i className="fa-solid fa-envelope" ></i></span>NSS
+                                        <a href=""><span><i icon="fa-solid fa-envelope" style={{ color: "#ffffff", }}></i></span>NSS
                                             Mail-ID</a>
 
                                     </div>
 
-                                    <div className="phone aa">
+                                    <div className="pn aa">
 
-                                        <a href=""><span><i className="fa-solid fa-phone" ></i></span>Phone
+                                        <a href=""><span><i icon="fa-solid fa-phone" style={{ color: "#ffffff", }}></i></span>Phone
                                             Number</a>
 
                                     </div>
@@ -75,21 +115,21 @@ export default function Footer() {
 
                             </div>
 
-                            <div className="box">
+                            <div className="bx">
 
-                                <div className="footer-col">
+                                <div className="ft-col">
 
                                     <form action="">
 
                                         <div className="row1">
 
-                                            <div className="name">
+                                            <div className="ne">
 
                                                 <input type="text" className="name" placeholder="Name" id="name" size="10" />
 
                                             </div>
 
-                                            <div className="email">
+                                            <div className="el">
 
                                                 <input type="text" className="email" placeholder="Email" id="email" size="10" />
 
@@ -100,13 +140,13 @@ export default function Footer() {
                                         <div className="row1">
 
                                             <textarea name="message" placeholder="Type you message here ..." id="message" cols="50"
-                                                rows="12"></textarea>
+                                                rows="8"></textarea>
 
                                         </div>
 
-                                        <div className="submit">
+                                        <div className="sb">
 
-                                            <input type="submit" value="Submit" />
+                                            <input type="submit"  value="Submit" />
 
                                         </div>
 
@@ -121,28 +161,24 @@ export default function Footer() {
 
                     </div>
 
-                    <div className="row">
+                    <div className="rws">
 
-                        <div className="social">
+                        <div className="sol">
 
-                            <div className="logo aab">
-                                <a href=""><span><i className="fa-brands fa-square-facebook" ></i></span></a>
+                            <div className="lg inst">
+                                <a href="https://instagram.com/nss_rcoem?igshid=MzRlODBiNWFlZA==" className='txt' target='_blank'><span><BiLogoInstagramAlt /></span></a>
                             </div>
 
-                            <div className="logo aac">
-                                <a href=""><span><i className="fa-brands fa-square-instagram" ></i></span></a>
+                            <div className="lg you">
+                                <a href="https://youtube.com/@nssrcoem1180?si=Dlez4A-bE_HZYoqU" target='_blank'><BsYoutube/></a>
                             </div>
 
-                            <div className="logo aab">
-                                <a href=""><span><i className="fa-brands fa-square-twitter" ></i></span></a>
+                            <div className="lg what">
+                            <a href=""><RiWhatsappFill/></a>
                             </div>
 
-                            <div className="logo aad">
-                                <a href=""><span><i className="fa-brands fa-youtube" ></i></span></a>
-                            </div>
-
-                            <div className="logo aae">
-                                <a href=""><span><i className="fa-brands fa-linkedin" ></i></span></a>
+                            <div className="lg face">
+                            <a href=""><BiLogoFacebookCircle/></a>
                             </div>
 
                         </div>
@@ -151,7 +187,7 @@ export default function Footer() {
 
                 </div>
 
-            </footer>
+            </footer> */}
         </>
     )
 }

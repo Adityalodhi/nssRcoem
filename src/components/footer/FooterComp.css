@@ -1,43 +1,145 @@
-/* Main body */
+
+.mainfoot{
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+.ff{
+    display: flex;
+    padding-top: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 1%;
+}
+.nn{
+    width: 50%;
+    /* background-color: aliceblue; */
+}
+.nn1{
+    width: 50%;
+}
+.aaa{
+    display: flex;
+    padding-top: 1%;
+    padding-left: 12%;
+    padding-right: 12%;
+    /* margin: 10%; */
+}
+.aaa h3{
+    font-weight: bold;
+    font-size: 22px;
+}
+.aaa p{
+    font-size: 17px;
+}
+.aaa1{
+    width: 50%;
+    justify-content: center;
+    line-height: 25px;
+    padding-right: 1%;
+}
+
+.aaa2{
+    padding-top: 10%;
+    width: 50%;
+    justify-content: center;
+    padding-left: 1%;
+}
+.nn1{
+    /* padding-top: 1.5%; */
+    /* width: 100%; */
+}
+.nn1 iframe{
+    width: 80%;
+    height: 105%;
+}
+.linee{
+    margin-top: 2%;
+    background-color: gray;
+    height: 3px;
+    width:60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1%;
+}
+.xxxx{
+    background-color: rgb(10, 10, 10);
+}
+.xxxx p{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    padding-bottom: 1%;
+    background-color: rgb(10, 10, 10);
+}
+.logoss {
+    padding: 10px;
+}
+.logoss img{
+    /* size: 550%; */
+    height: 40px;
+    width: 40px;
+}
+.insta{
+    padding: 1px;
+    margin-left: 13%;
+}
+@media (max-width : 1000px) {
+    .nn{
+        width: 60%;
+    }
+    .nn1{
+        width: 40%;
+    }
+}
+@media (max-width : 750px) {
+    .ff{
+        display: flex;
+        flex-direction: column;
+    }
+    .nn{
+        width: 100%;
+    }
+    .nn1{
+        width: 100%;
+       display: flex;
+       justify-content: center;
+    }
+    .aaa{
+        padding-left: 4%;
+        padding-right: 14%;
+    }
+    .logoss a{
+        font-size: 300%;
+        /* padding: px; */
+        padding-bottom: 20px;
+    }
+    .insta{
+        padding: 1px;
+        margin-left: 6%;
+    }
+    
+}
+
+
+/*
+Main body
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.con{
     max-width: 100%;
 }
 
-.footer{
+.ft{
     background-color: #282525;
     padding: 60px 0;
 }
 
 
-
-.bordered{
-    border:0;
-}
-
-.aa{
-    color: #ffffff;
-}
-
-.aab{
-    color: #3661ab;
-}
-.aac{
-    color: #ab4471;
-}
-.aad{
-    color: #c84141;
-}
-.aae{
-    color: #2c58a5;
-}
-/* Upper row */
-.upperrow{
+.uw{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,32 +152,32 @@ h1{
     padding-bottom: 30px;
 }
 
-.footer-col{
+.ft-col{
     color: #FFFFFF;
     font-size: 25px;
-    width: 310px;
+    width: 320px;
     height: 319px;
 }
 
-.footer-col a{
+.ft-col a{
     color: #FFFFFF;
     text-decoration: none;
     font-size: 22px;
 }
 
-.location{
+.lt{
     padding-bottom: 10px;
 }
 
-.mail{
+.ml{
     padding-bottom: 10px;
 }
 
-.box{
+.bx{
     padding-bottom: 50px;
 }
 
-.container span{
+.con span{
     padding-right: 20px;
 }
 
@@ -84,28 +186,30 @@ h1{
     flex-wrap: wrap;
 }
 
-.loc-text{
+.loc-txt{
     width: 260px;
 }
 
 .row1{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    padding: 5px;
     padding-bottom: 22px;
 }
 
-.name{
+.ne{
     padding-right: 20px;
+    padding-top: 10px;
+
 }
 
-.email{
-    padding-left: 19.5px;
+.el{
+    padding-top: 10px;
 }
 
 input[type=text]{
     color: #282525;
-    padding: 20px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
 }
@@ -119,8 +223,8 @@ textarea{
 input[type=submit]{
     color: #282525;
     padding: 10px;
-    padding-left: 134.8px;
-    padding-right: 134.8px;
+    padding-left: 122.8px;
+    padding-right: 122.8px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -135,15 +239,16 @@ input[type=submit]:hover{
     cursor: pointer;
 }
 
-.submit{
+.sb{
+    height: 80px;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 
 
-/* Lower row */
-.social{
+.sol{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -156,6 +261,58 @@ input[type=submit]:hover{
     font-size: 40px;
 }
 
-.logo{
+.lg{
     padding: 10px;
+    font-size: 50px;
 }
+
+::placeholder {
+    font-size: large;
+    padding: 10px;
+    color: red;
+    opacity: 1;
+}
+
+textarea{
+    padding-left: 10px;
+}
+
+.name{
+    height: 60px;
+    width: 145px;
+}
+
+.email{
+    height: 60px;
+    width: 145px;
+}
+
+.rws{
+    margin-top: 150px;
+}
+
+.inst svg{
+    color: rgb(240, 98, 157);
+}
+.inst svg:hover{
+    color: rgb(234, 57, 130);
+    font-size: 60px;
+}
+
+.you svg{
+    color: rgb(227, 48, 48);
+}
+.you svg:hover{
+    color: rgb(255, 0, 0);
+    font-size: 60px;
+}
+
+.what svg{
+    color:rgb(7, 150, 0) ;
+}
+.what svg:hover{
+    color: rgb(63, 238, 53);
+    font-size: 60px;
+}
+
+*/

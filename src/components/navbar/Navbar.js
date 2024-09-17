@@ -3,17 +3,22 @@ import "./NavbarComp.css";
 import logo1 from "./images/nssLogo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 
 export default function Navbar() {
     const [showMediaIcons, setShowMediaIcons] = useState(false);
-    const[fix,setFix] = useState(false);
+    const location = useLocation();
+    console.log(location.pathname);
+    const path = location.pathname;
+    const[fix,setFix] = useState(true);
 
     function navFixedd(){
-        if(window.scrollY > 8){
+        if(window.scrollY > 8 && location?.pathname === '/'){
             setFix(true);
         }
-        else{
+        else {
+            if(location?.pathname === '/')
             setFix(false);
         }
     }
@@ -22,7 +27,7 @@ export default function Navbar() {
     return (
     <>
 {/* "main-nav" */}
-        <nav className={fix ? "main-nav navvv" : "main-nav"}>
+        <nav className='navvv' style={{backgroundColor: (path !== '/') ? 'white' : (window.scrollY > 8) ? 'white' : 'transparent', boxShadow:(path==='/' && window.scrollY<8) ? 'none' : 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px'}} >
             {/* logo part */}
             <div className='logo'>
                 <Link to="/">
@@ -58,6 +63,20 @@ export default function Navbar() {
                     </li>
                     <li>
                         <Link to="/gallary">Gallary</Link>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="xyz">
+                <ul>
+                    <li>
+                        <Link to="/team23"></Link>
+                    </li>
+                    <li>
+                        <Link to="/team22"></Link>
+                    </li>
+                    <li>
+                        <Link to="/prerna15"></Link>
                     </li>
                 </ul>
             </div>
