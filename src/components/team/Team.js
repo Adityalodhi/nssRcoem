@@ -28,6 +28,7 @@ export default function Team() {
                                 <div className="ys">
                                     <Link to="/team">2023</Link>
                                     <Link to="/team22">2022</Link>
+                                    <Link to="/team24">2024</Link>
                                     {/* <Link to="#">2021</Link> */}
                                 </div>
                             </div>
