@@ -62,7 +62,7 @@ export default function Navbar() {
                         <Link to="/team">Team</Link>
                     </li>
                     <li>
-                        <Link to="/gallary">Gallary</Link>
+                        <Link to="/gallary">Gallery</Link>
                     </li>
                 </ul>
             </div>
